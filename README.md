@@ -13,3 +13,23 @@ yay -S hyprland-bin kitty waybar-hyprland \
 ```
 
 Or you can use the attached script "set-hypr" to install everything for you.
+
+Notes: I have added some dependancies and listed the complete nerd fonts as a needed source.
+For my personal systems I have set up niri and I suggest switching to it as an alternative if wanted. I DO NOT OWN NIRI I ONLY USE IT. Visit the niri project website here: https://yalter.github.io/niri/
+
+For Arch (my personal choice)
+...
+sudo pacman -Syu niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk
+paru -S dms-shell-bin matugen wl-clipboard cliphist cava qt6-multimedia-ffmpeg
+systemctl --user add-wants niri.service dms
+...
+
+For Fedora
+...
+sudo dnf copr enable avengemedia/dms
+sudo dnf install niri dms
+systemctl --user add-wants niri.service dms
+...
+
+...
+
